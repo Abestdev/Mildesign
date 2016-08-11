@@ -270,9 +270,9 @@ body {
 	/*---------- Slider ----------*/
 
 
-	.slick-slider {
-		max-width: 1600px;
-		margin: 0 auto;
+	.slick-slider img{
+		width: 100%;	
+			
 	}
 	button.slick-prev.slick-arrow {
 		width: 40px;
@@ -281,6 +281,7 @@ body {
 		overflow: hidden;
 		position: absolute;
 		top: 50%;
+		left:25px;
 		z-index: 2;
 		background: transparent;
 		color: white;
@@ -297,7 +298,7 @@ body {
 		z-index: 2;
 		background: transparent;
 		color: white;
-		right: 0;
+		right: 25px;
 		opacity: 1;
 		box-shadow: 0 0 0 3px #fff;
 		border: none;
@@ -308,12 +309,15 @@ body {
 		background: -o-linear-gradient(bottom, #5cccae 0%, #34c9e3 100%);
 		background: linear-gradient(to top, #5cccae 0%, #34c9e3 100%);
 	}
+
+
 	._1_slide_text,
 	._2_slide_text,
 	._3_slide_text{
-		position: absolute;
-		top: 25%;
-		right: 14%; 	
+		position: relative;
+		top: -350px;
+		left: 50%; 	
+	    margin-bottom: -265px;
 		color: #fff;
 		text-align: left;
 	}
@@ -367,48 +371,48 @@ body {
 	}
 
 
-.port1,
-.port2,
-.port3,
-.port4,
-.port5,
-.port6,
-.port7,
-.port8{
-	width: 100px;
-	height: 100px;
-}
+	.port1,
+	.port2,
+	.port3,
+	.port4,
+	.port5,
+	.port6,
+	.port7,
+	.port8{
+		width: 100%;
+		height: 200px;
+	}
 
-.port1:hover,
-.port2:hover,
-.port3:hover,
-.port4:hover,
-.port5:hover,
-.port6:hover,
-.port7:hover,
-.port8:hover{
+	.port1:hover,
+	.port2:hover,
+	.port3:hover,
+	.port4:hover,
+	.port5:hover,
+	.port6:hover,
+	.port7:hover,
+	.port8:hover{
 
-	opacity: 0.8;
-	 background-color: #59cbfa;
+		opacity: 0.8;
+		background-color: #59cbfa;
 
-	background-color: #f0f0f2;
-		 background: -webkit-linear-gradient(bottom, #5cccae 0%, #34c9e3 100%);
+		background-color: #f0f0f2;
+		background: -webkit-linear-gradient(bottom, #5cccae 0%, #34c9e3 100%);
 		background: -o-linear-gradient(bottom, #5cccae 0%, #34c9e3 100%);
 		background: linear-gradient(to top, #5cccae 0%, #34c9e3 100%);
-}
+	}
 
 
 	
 
 
-.port1{background: url(../img/p1.png); }
-.port2{background: url(../img/p2.png); }
-.port3{background: url(../img/p3.png); }
-.port4{background: url(../img/p4.png); }
-.port5{background: url(../img/p5.png); }
-.port6{background: url(../img/p6.png); }
-.port7{background: url(../img/p7.png); }
-.port8{background: url(../img/p8.png); }
+	.port1{background: url(../img/p1.png); }
+	.port2{background: url(../img/p2.png); }
+	.port3{background: url(../img/p3.png); }
+	.port4{background: url(../img/p4.png); }
+	.port5{background: url(../img/p5.png); }
+	.port6{background: url(../img/p6.png); }
+	.port7{background: url(../img/p7.png); }
+	.port8{background: url(../img/p8.png); }
 	
 
 
@@ -514,4 +518,25 @@ body {
 		/*---------- Map ----------*/
 		/*---------- /Map ----------*/
 		/*---------- Footer ----------*/ 
+		
+		footer{
+			/*height: 70px;*/
+			background-color: #f0f0f2;
+			
+
+		}
+		.logofooter{
+			margin: 20px auto;
+		}
+		.logofooter a{
+
+
+
+		}
+
+		.copyr{
+			margin: 20px auto;
+
+		}
+
 		/*---------- /Footer ----------*/ 
