@@ -82,10 +82,12 @@
 		font-size: 20px;
 	}
 	.sect2 h2 {
-		margin-top: 37px;
-		margin-bottom: 115px;
-		font-size: 25px;
+		margin-top: 32px;
+		margin-bottom: 59px;
+		font-size: 19px;
 	}
+
+
 
 }
 
@@ -135,8 +137,8 @@
 			font-size: 1.4em;
 		}
 		button.slick-prev.slick-arrow {
-		width: 23px;
-		height: 23px;
+			width: 23px;
+			height: 23px;
 		}
 		button.slick-next.slick-arrow {
 			width: 23px;
@@ -191,12 +193,12 @@
 			font-size: 2em;
 		}
 		button.slick-prev.slick-arrow {
-		width: 40px;
-		height: 40px;
+			width: 40px;
+			height: 40px;
 		}
 		button.slick-next.slick-arrow {
-		width: 40px;
-		height: 40px;	
+			width: 40px;
+			height: 40px;	
 		}
 
 	}
@@ -246,42 +248,58 @@
 		}
 
 	}
-
-
-
-	@media only screen and (min-width : 992px) and ( max-width : 1200px) {
-		.promo p, .premium p, .business p{
-			padding: 20px 10px 50px 10px;
-			font-size: 11px;
-			line-height: 32px;
-			margin-top: 5px;
+	@media only screen and (min-width : 375px) and ( max-width : 425px)  {
+		.sect2 p {
+			margin: 0px 130px 50px 0px;			
 		}
-
-		.promo h2, .premium h2, .business h2{
-			font-size: 20px;
-		}
-
-		._1_slide_text,
-		._2_slide_text,
-		._3_slide_text{
-			top: -225px;
-			margin-bottom: -169px;
-		}
-		._1_slide_text a,._2_slide_text a,._3_slide_text a{
-			font-size: 16px;
-		}
-		._1_slide_text,._2_slide_text,._3_slide_text h2{
-			font-size: 20px;
-			line-height: 28px;
-			text-transform: uppercase;
-		}
-		._1_slide_text p,._2_slide_text p,._3_slide_text p{
-			font-size: 16px;
-			line-height: 21px;		
-		}
-
-
 	}
+		@media only screen and (min-width : 425px) and ( max-width : 768px)  {
+			.sect2 p {
+				margin: 20px 0px 50px 0px;
+				margin-right: 61%;
+			}	
+		}
+			@media only screen and (min-width : 768px) and ( max-width : 992px) {
+				.sect2 p {
+					margin: 20px 0px 50px 0px;
+					line-height: 20px;
+				}
+			}
+
+
+			@media only screen and (min-width : 992px) and ( max-width : 1200px) {
+				.promo p, .premium p, .business p{
+					padding: 20px 10px 50px 10px;
+					font-size: 11px;
+					line-height: 32px;
+					margin-top: 5px;
+				}
+
+				.promo h2, .premium h2, .business h2{
+					font-size: 20px;
+				}
+
+				._1_slide_text,
+				._2_slide_text,
+				._3_slide_text{
+					top: -225px;
+					margin-bottom: -169px;
+				}
+				._1_slide_text a,._2_slide_text a,._3_slide_text a{
+					font-size: 16px;
+				}
+				._1_slide_text,._2_slide_text,._3_slide_text h2{
+					font-size: 20px;
+					line-height: 28px;
+					text-transform: uppercase;
+				}
+				._1_slide_text p,._2_slide_text p,._3_slide_text p{
+					font-size: 16px;
+					line-height: 21px;		
+				}
+
+
+			}
 
 
 

@@ -210,8 +210,6 @@ body {
 		text-align: center;
 	}
 
-
-
 	.sect2 p{
 		margin: 20px 77px 50px 0px;
 		color:#3b3b3b;
@@ -236,33 +234,50 @@ body {
 		margin-bottom: 50px;
 		font-size: 16px;
 		font-weight: 900;
-		line-height: 24px;
-		background-image: url();
+		line-height: 24px;		
 	}
-	.microscope{background: url(../img/MicroscopeFilled-e100.png) no-repeat }
-	.aria_chart{background: url(../img/AreaChart.png) no-repeat;}
-	.exchange{background: url(../img/KeyExchange-e100.png) no-repeat;}
-	.experience{background: url(../img/ForExperienced-e100.png) no-repeat;}
+	.microscope{background: url(../img/MicroscopeFilled-e100.png) no-repeat 50% }
+	.aria_chart{background: url(../img/AreaChart.png) no-repeat 50%}
+	.exchange{background: url(../img/KeyExchange-e100.png) no-repeat 50%}
+	.experience{background: url(../img/ForExperienced-e100.png) no-repeat 50%}
+	
 
-	.microscope:hover,
-	.aria_chart:hover,
-	.exchange:hover,
-	.experience:hover{
+	.microscope_block,
+	.aria_chart_block,
+	.exchange_block,
+	.experience_block{
+		height: 159px;
+		width: 159px;
+		border-radius: 100%;
+		box-shadow: 0 0 0 1px rgba(128,128,128,0.25);
+		margin-bottom: 50px;
+
+	}
+	.microscope_block:hover,
+	.aria_chart_block:hover,
+	.exchange_block:hover,
+	.experience_block:hover{
+		height: 159px;
+		width: 159px;
+		border-radius: 100%;
+		box-shadow: 0 0 0 1px rgba(128,128,128,0.25);
+		margin-bottom: 50px;
 		background-color: #f7f7f7;
 		background-image: -webkit-linear-gradient(bottom, #5cccaf 0%, #34c9e3 100%);
 		background-image: -o-linear-gradient(bottom, #5cccaf 0%, #34c9e3 100%);
 		background-image: linear-gradient(to top, #5cccaf 0%, #34c9e3 100%);
+		overflow: hidden;
 	}
 
 	.microscope:hover{
-		background: url(../img/MicroscopeFilled-100.png) no-repeat;
+		background: url(../img/MicroscopeFilled-100.png) no-repeat 50%;
 	}
 	.aria_chart{}
 	.exchange:hover{
-		background: url(../img/KeyExchange-100.png) no-repeat;
+		background: url(../img/KeyExchange-100.png) no-repeat 50%;
 	}
 	.experience:hover{
-		background: url(../img/ForExperienced100.png) no-repeat;
+		background: url(../img/ForExperienced100.png) no-repeat 50%;
 	}
 
 	/*---------- /Section2 ----------*/
@@ -272,7 +287,7 @@ body {
 
 	.slick-slider img{
 		width: 100%;	
-			
+
 	}
 	button.slick-prev.slick-arrow {
 		width: 40px;
@@ -317,7 +332,7 @@ body {
 		position: relative;
 		top: -350px;
 		left: 50%; 	
-	    margin-bottom: -265px;
+		margin-bottom: -265px;
 		color: #fff;
 		text-align: left;
 	}
@@ -360,7 +375,6 @@ body {
 		font-weight: 100;
 		line-height: 5px;
 		text-transform: uppercase;
-
 	}
 	.sect3 p,.sect4  p{
 		margin-top: 32px;
@@ -369,7 +383,22 @@ body {
 		font-weight: 900;
 		line-height: 16px;
 	}
+	.sect3 p{
+		margin-bottom: 50px;
+	}
 
+	.sect3 .col-lg-1,.sect3 .col-lg-10,.sect3 .col-lg-11,.sect3 .col-lg-12,.sect3 .col-lg-2,.sect3
+	.col-lg-3,.sect3 .col-lg-4,.sect3 .col-lg-5,.sect3 .col-lg-6,.sect3 .col-lg-7,.sect3 .col-lg-8,.sect3
+	.col-lg-9,.sect3 .col-md-1,.sect3 .col-md-10,.sect3 .col-md-11,.sect3 .col-md-12,.sect3 .col-md-2,.sect3 
+	.col-md-3,.sect3 .col-md-4,.sect3 .col-md-5,.sect3 .col-md-6,.sect3 .col-md-7,.sect3 .col-md-8,.sect3 
+	.col-md-9,.sect3 .col-sm-1,.sect3 .col-sm-10,.sect3 .col-sm-11,.sect3 .col-sm-12,.sect3 .col-sm-2,.sect3 
+	.col-sm-3,.sect3 .col-sm-4,.sect3 .col-sm-5,.sect3 .col-sm-6,.sect3 .col-sm-7,.sect3 .col-sm-8,.sect3 .col-sm-9,.sect3 
+	.col-xs-1,.sect3 .col-xs-10,.sect3 .col-xs-11,.sect3 .col-xs-12,.sect3 .col-xs-2,.sect3 .col-xs-3,.sect3 .col-xs-4,.sect3
+	.col-xs-5,.sect3 .col-xs-6,.sect3 .col-xs-7,.sect3 .col-xs-8,.sect3 .col-xs-9 {
+
+		padding-right: 0px;
+		padding-left: 0px;
+	}
 
 	.port1,
 	.port2,
@@ -379,41 +408,155 @@ body {
 	.port6,
 	.port7,
 	.port8{
-		width: 100%;
-		height: 200px;
+		position: relative;
 	}
 
-	.port1:hover,
-	.port2:hover,
-	.port3:hover,
-	.port4:hover,
-	.port5:hover,
-	.port6:hover,
-	.port7:hover,
-	.port8:hover{
+	.port1a,
+	.port2a,
+	.port3a,
+	.port4a,
+	.port5a,
+	.port6a,
+	.port7a,
+	.port8a{
+		width: 100%;
+		height: 334px;
+		display: block;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.port1a{
+		background: url(../img/p1.png);
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.port2a{
+		background: url(../img/p2.png);
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.port3a{
+		background: url(../img/p3.png);
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.port4a{
+		background: url(../img/p4.png);
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.port5a{
+		background: url(../img/p5.png);
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.port6a{
+		background: url(../img/p6.png);
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.port7a{
+		background: url(../img/p7.png);
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.port8a{
+		background: url(../img/p8.png);
+		-webkit-background-size: cover;
+		background-size: cover;
+	}	
 
-		opacity: 0.8;
-		background-color: #59cbfa;
-
-		background-color: #f0f0f2;
+	.port1:hover .port_hover_block,
+	.port2:hover .port_hover_block,
+	.port3:hover .port_hover_block,
+	.port4:hover .port_hover_block,
+	.port5:hover .port_hover_block,
+	.port6:hover .port_hover_block,
+	.port7:hover .port_hover_block,
+	.port8:hover .port_hover_block{
+		position: absolute;
+		display: block !important;
+		width: 100%;
+		height: 334px;	
+		top:0;
+		left: 0;
 		background: -webkit-linear-gradient(bottom, #5cccae 0%, #34c9e3 100%);
 		background: -o-linear-gradient(bottom, #5cccae 0%, #34c9e3 100%);
 		background: linear-gradient(to top, #5cccae 0%, #34c9e3 100%);
+		-webkit-background-size: cover;
+		background-size: cover;
+		opacity: 0.8;
+		transition: 
+	}
+
+	.port1:hover .port_hover_block>.spoon,
+	.port2:hover .port_hover_block>.spoon,
+	.port3:hover .port_hover_block>.spoon,
+	.port4:hover .port_hover_block>.spoon,
+	.port5:hover .port_hover_block>.spoon,
+	.port6:hover .port_hover_block>.spoon,
+	.port7:hover .port_hover_block>.spoon,
+	.port8:hover .port_hover_block>.spoon{
+		position: absolute;
+		top:50%;
+		left: 50%;
+		width: 50px;
+		height: 50px;
+		margin-top: -61px;
+		margin-left: -25px;
+		padding: 11px;
+		border-radius: 100%;
+		border: 1px solid #fff;
+		background-color: #fff;
+	}	
+
+	.port1:hover .port_hover_block> .spoon> i,
+	.port2:hover .port_hover_block> .spoon> i,
+	.port3:hover .port_hover_block> .spoon> i,
+	.port4:hover .port_hover_block> .spoon> i,
+	.port5:hover .port_hover_block> .spoon> i,
+	.port6:hover .port_hover_block> .spoon> i,
+	.port7:hover .port_hover_block> .spoon> i,
+	.port8:hover .port_hover_block> .spoon> i{
+		transform: rotate(90deg);
+		color: #3b3b3b;
+		font-size: 1.7em;
+	}
+
+	.port1:hover .port_hover_block span,
+	.port2:hover .port_hover_block span,
+	.port3:hover .port_hover_block span,
+	.port4:hover .port_hover_block span,
+	.port5:hover .port_hover_block span,
+	.port6:hover .port_hover_block span,
+	.port7:hover .port_hover_block span,
+	.port8:hover .port_hover_block span{
+		display: block;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 133px;
+		background-color: #f0f0f2;
+		opacity: 0.9;
+	}
+
+	.port5:hover .port_hover_block .spoon{
+		position: absolute;
+		top:50%;
+		left: 50%;
+		width: 50px;
+		height: 50px;
+		margin-top: -61px;
+		margin-left: -25px;
+		padding: 10px;
+		border-radius: 100%;
+		border: 1px solid #fff;
+		background-color: #fff;
 	}
 
 
-	
 
 
-	.port1{background: url(../img/p1.png); }
-	.port2{background: url(../img/p2.png); }
-	.port3{background: url(../img/p3.png); }
-	.port4{background: url(../img/p4.png); }
-	.port5{background: url(../img/p5.png); }
-	.port6{background: url(../img/p6.png); }
-	.port7{background: url(../img/p7.png); }
-	.port8{background: url(../img/p8.png); }
-	
 
 
 
@@ -426,7 +569,7 @@ body {
 	/*---------- Section4  ----------*/
 	.promo,
 	.premium,
-	.business{
+	.business{		
 		margin-top: 50px;
 		padding-bottom:25px; 	;
 		background-color: #fff;
@@ -437,9 +580,8 @@ body {
 	.premium:hover,
 	.business:hover{
 		margin-top: 35px;
-		padding-bottom: 55px;
-		
-		transition: 0,5s ease;
+		padding-bottom: 55px;		
+		transition: 0.5s ease;
 	}
 	.promo h2,
 	.premium h2,
@@ -450,93 +592,154 @@ body {
 		font-weight: 300;
 		line-height: 24px;
 		padding: 25px 10px 20px 10px;		
-			/*width: 69px;
-			height: 17px;*/
-		}
-		.promo h2:hover,
-		.premium h2:hover,
-		.business h2:hover{
-			margin-top: -14px;
-			padding: 35px 25px 25px 25px;
-			background: -webkit-linear-gradient(bottom, #5cccae 0%, #34c9e3 100%);
-			background: -o-linear-gradient(bottom, #5cccae 0%, #34c9e3 100%);
-			background: linear-gradient(to top, #5cccae 0%, #34c9e3 100%);
-		}
-		.promo p,
-		.premium p,
-		.business p{
-			padding: 20px 10px 50px 35px;
-			color: #3b3b3b;
-			font-size: 14px;
-			font-weight: 100;
-			line-height: 36px;
-			text-transform: uppercase;
-			text-align: left;
-		}
-		.promo p{
-			padding-bottom: 119px;
-		}	
-		.promo a,
-		.premium a,
-		.business a{			
-			padding: 10px;
-			margin-top: 50px;
-			margin-bottom: 10px;		
-			border: 1px solid #3b3b3b;
-			background-color: rgba(255, 255, 255, 0.1);
-			color: #3b3b3b;
-			font-size: 14px;
-			font-weight: 900;
-			line-height: 20px;
-			text-transform: uppercase;
-		}
-		.promo a:hover,
-		.premium a:hover,
-		.business a:hover{
-			background: -webkit-linear-gradient(bottom, #5cccae 0%, #34c9e3 100%);
-			background: -o-linear-gradient(bottom, #5cccae 0%, #34c9e3 100%);
-			background: linear-gradient(to top, #5cccae 0%, #34c9e3 100%);
-			border: none;
+	}
+	.promo:hover h2,
+	.premium:hover h2,
+	.business:hover h2{
+		margin-top: -14px;
+		padding: 35px 25px 25px 25px;
+		background: -webkit-linear-gradient(bottom, #5cccae 0%, #34c9e3 100%);
+		background: -o-linear-gradient(bottom, #5cccae 0%, #34c9e3 100%);
+		background: linear-gradient(to top, #5cccae 0%, #34c9e3 100%);
+		transition: 0.5s ease;
+	}
+	.promo p,
+	.premium p,
+	.business p{
+		margin-top: 68px;
+		padding: 20px 10px 50px 35px;
+		color: #3b3b3b;
+		font-size: 14px;
+		font-weight: 100;
+		line-height: 36px;
+		text-transform: uppercase;
+		text-align: left;
+	}
+	.promo p{
+		padding-bottom: 119px;
+	}	
+	.promo a,
+	.premium a,
+	.business a{			
+		padding: 10px;
 
-		}
+		border: 1px solid #3b3b3b;
+		background-color: rgba(255, 255, 255, 0.1);
+		color: #3b3b3b;
+		font-size: 14px;
+		font-weight: 900;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+	.promo a:hover,
+	.premium a:hover,
+	.business a:hover{
+		background: -webkit-linear-gradient(bottom, #5cccae 0%, #34c9e3 100%);
+		background: -o-linear-gradient(bottom, #5cccae 0%, #34c9e3 100%);
+		background: linear-gradient(to top, #5cccae 0%, #34c9e3 100%);
+		border: none;		
+	}	
+	.sect4 h2{
+		margin-bottom: 32px;
+	}
+	.price{
+		position: relative;
+	}
+	#priceP{
+		margin-left: -26%;		
+		padding-bottom: 41px;
+		color: #3b3b3b;
+		font-size: 54px;
+		font-weight: 700;
+		line-height: 24px;
+		border-bottom: 2px solid #50cbbe;		
+	}
 
-		
+	.price .sub{
+		position: absolute;		
+		top: 41%;
+		left: 37%;
+		color: #50cbbe;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 24px;	
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	.price:first-child{
+		left:;
+	}
+	.business>.price>.sub{
+		left:47%;
+	}
+	.business>.price> #priceP{
+		margin-left: -17%;
+	}
+	.price sup{
+		font-size: 30px;
+		font-weight: 400;
+		line-height: 24px;
+		text-decoration: none;				
+	}
 
-		.promo|{
+	.promo:hover .price ,
+	.premium:hover .price ,
+	.business:hover .price  {			
+		font-size: 60px;			
+		line-height: 26px;
+		transition: 0.3s ease;
+	}
+	.promo:hover .price sup,
+	.premium:hover .price sup,
+	.business:hover .price sup {			
+		font-size: 36px;			
+		line-height: 26px;
+		transition: 0.3s ease;
+	}
+	.promo:hover> .price> #priceP,
+	.premium:hover> .price> #priceP{
+		margin-left: -16%;
+	}
+	.business:hover> .price> #priceP{
+		margin-left: -10%;
+	}
 
-		}
-		.premium{
-
-		}
-		.business{
-
-		}
-
-
-		/*---------- /Section4 Prices ----------*/
-
-		/*---------- Map ----------*/
-		/*---------- /Map ----------*/
-		/*---------- Footer ----------*/ 
-		
-		footer{
-			/*height: 70px;*/
-			background-color: #f0f0f2;
-			
-
-		}
-		.logofooter{
-			margin: 20px auto;
-		}
-		.logofooter a{
+	.promo:hover .price sub,
+	.premium:hover .price sub,
+	.business:hover .price sub {			
+		font-size: 14px;			
+		line-height: 26px;
+		margin-left: -16%;
+	}
 
 
 
-		}
 
-		.copyr{
-			margin: 20px auto;
 
-		}
+	/*---------- /Section4 Prices ----------*/
 
-		/*---------- /Footer ----------*/ 
+	/*---------- Map ----------*/
+	/*---------- /Map ----------*/
+	/*---------- Footer ----------*/ 
+
+	footer{
+		/*height: 70px;*/
+		background-color: #f0f0f2;
+
+
+	}
+	.logofooter{
+		margin: 20px auto;
+	}
+	.logofooter a{
+
+
+
+	}
+
+	.copyr{
+		margin: 20px auto;
+
+	}
+
+	/*---------- /Footer ----------*/ 
