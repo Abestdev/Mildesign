@@ -39,7 +39,7 @@ body {
 	line-height: 1.6;
 	font-family: "RobotoRegular", sans-serif;
 	overflow-x: hidden;
-	background-color: #ebebeb;
+	background-color: #fff;
 }
 .hidden {
 	display: none;
@@ -52,7 +52,20 @@ body {
 /*---------- Header, navigation ----------*/
 
 
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover,.navbar-toggle {background-color:#46cacb;}
+.navbar-default .navbar-toggle .icon-bar {
+	border-color: #fff;
+	background-color: #fff;	
+}
 
+.navbar{    margin-bottom: 0px; border: none;} 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	border: none;
+}
+.navbar-default {
+	background-color: #fff;
+}
 .nav  li a{
 	display: inline-block;
 	float: left;
@@ -61,15 +74,10 @@ body {
 	line-height: 32px;
 }
 .nav  li a:first-child{padding-left: 5px;}
-.navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:hover,.navbar-toggle {background-color:#46cacb;}
-.navbar-default .navbar-toggle .icon-bar {
-	border-color: #fff;
-	background-color: #fff;
-}
-.navbar{    margin-bottom: 0px;} 
-.navbar-default .navbar-collapse, .navbar-default .navbar-form{
-	border: none;
+.navbar-default .navbar-nav>li:first-child:hover{border: none; background-color: #fff;}
+.navbar-default .navbar-nav>li:focus, .navbar-default .navbar-nav>li:hover {
+	background-color: #f5f6f9;
+	border-bottom: 2px solid #59cbfa;
 }
 .nav li a i{color: #46cacb;}
 .nav span{
@@ -82,7 +90,7 @@ body {
 .nav span i{color:#737475;padding-right:14px; }
 .navbtn{
 	width:232px;
-	height:48px;
+	height:44px;
 	margin: 10px 0;	
 	background-color: #17a8c7;
 	background-image: linear-gradient(to top,#5cccaf 0%, #34c9e3 100%);
@@ -101,6 +109,52 @@ body {
 	color:#fff;
 	background-color: #17a8c7;
 	background-image: linear-gradient(to top,#5cccaf 0%, #34c9e3 100%);
+}
+.navbtn a{
+	color:#fff;
+}
+.modal_container{
+	display: none;
+    height: 100vh;
+    width: 100vw;
+    margin-top: -65px;
+    position: fixed;
+    z-index: 10;	
+    background: rgba(55, 55, 55, 0.8);
+}
+.modal{
+	/*display: none;*/
+	display: block;
+	position: relative;
+	top:149px;
+	margin: 0 auto;
+	width: 356px;
+	height: 412px;
+	background-color: #fff;
+	color: #3b3b3b;
+	border: 2px dashed #000;
+	overflow: visible;		
+}
+.modal input{
+	padding: 8px; 
+	color: #9d9d9d;
+    border: 2px solid #f1f1f1;
+}
+.mesInput {
+	padding-bottom: 100px !important;
+}
+.closeModal{
+	position: absolute;
+	top: -10px;
+    right: -10px;
+    padding: 10px 16px;
+	background-image: linear-gradient(to top,#5cccaf 0%, #34c9e3 100%);
+	border-radius: 50%;
+	color: #fff;
+	cursor: pointer;
+}
+.modal button {
+	width: 100%;
 }
 /*---------- /Header, navigation ----------*/
 
@@ -237,7 +291,7 @@ body {
 		line-height: 24px;		
 	}
 	.microscope{background: url(../img/MicroscopeFilled-e100.png) no-repeat 50% }
-	.aria_chart{background: url(../img/AreaChart.png) no-repeat 50%}
+	.aria_chart{background: url(../img/AreaChart-e.png) no-repeat 50%}
 	.exchange{background: url(../img/KeyExchange-e100.png) no-repeat 50%}
 	.experience{background: url(../img/ForExperienced-e100.png) no-repeat 50%}
 	
@@ -272,7 +326,9 @@ body {
 	.microscope:hover{
 		background: url(../img/MicroscopeFilled-100.png) no-repeat 50%;
 	}
-	.aria_chart{}
+	.aria_chart:hover{
+		background: url(../img/AreaChart.png) no-repeat 50%;
+	}
 	.exchange:hover{
 		background: url(../img/KeyExchange-100.png) no-repeat 50%;
 	}
@@ -719,6 +775,77 @@ body {
 	/*---------- /Section4 Prices ----------*/
 
 	/*---------- Map ----------*/
+	.sectmap{
+
+	}
+	.gmap{
+		position: relative;
+		max-height: 530px;
+	}
+	.map_pop{
+		position: absolute;
+		left: 244px;
+		top:106px;		
+		background-color: #fff;
+		border: 2px solid #f1f1f1;
+	}
+	form{
+		padding: 40px 26px;
+	}
+	legend{
+		display: block;
+		text-align: center;
+		color: #3b3b3b;
+		font-size: 24px;
+		font-weight: 100;
+		line-height: 5px;
+		text-transform: uppercase;
+		margin-bottom: 16px;
+	}
+input{margin-top: 10px; width:100%;     border: 2px solid #f1f1f1;}
+
+
+	::-webkit-input-placeholder {
+		text-align:center;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+		text-align:center;  
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+		text-align:center;  
+	}
+
+	:-ms-input-placeholder {  
+		text-align:center; 
+	}
+	
+	.formbtn{
+	display: block;
+	width:290px;
+	height:44px;
+	margin: 10px 0;	
+	background-color: #17a8c7;
+	background-image: linear-gradient(to top,#5cccaf 0%, #34c9e3 100%);
+	font-size: 14px;
+	color:#fff;
+	font-weight: 400;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+	.formbtn,.formbtn:active:focus:hover,.formbtn:active:focus,
+	.formbtn:active,.formbtn:focus,.formbtn:hover{
+		outline: none;
+		border: none;
+		box-shadow: none;	
+		border-radius: 0px;
+		color:#fff;
+		background-color: #17a8c7;
+		background-image: linear-gradient(to top,#5cccaf 0%, #34c9e3 100%);
+	}
+
+
 	/*---------- /Map ----------*/
 	/*---------- Footer ----------*/ 
 
