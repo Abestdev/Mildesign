@@ -13,14 +13,24 @@ $(document).ready(function() {
 		fade: false,
 		cssEase: 'linear'
 		});
+
+
+		$('.navbtn').click(function() {
+		$('.modal_container').fadeIn(500)			
+		});
+		$('.closeModal').click(
+		function() { 
+			$('.modal_container').fadeOut(500)		 
+		}); 
 	
 
-	//Цели для Яндекс.Метрики и Google Analytics
-	$(".count_element").on("click", (function() {
-		ga("send", "event", "goal", "goal");
-		yaCounterXXXXXXXX.reachGoal("goal");
-		return true;
-	}));
+	
+
+
+
+
+
+
 
 	//SVG Fallback
 	// if(!Modernizr.svg) {
@@ -46,50 +56,7 @@ $(document).ready(function() {
 		return false;
 	});
 
-	//Chrome Smooth Scroll
-	try {
-		$.browserSelector();
-		if($("html").hasClass("chrome")) {
-			$.smoothScroll();
-		}
-	} catch(err) {
-
-	};
-
-	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
-
-
 	
-});
-
-
-
-$(window).load(function() {
-
-	$(".loader_inner").fadeOut();
-	$(".loader").delay(400).fadeOut("slow");
-
-});
-
-
-
-$(window).scrollTop(function() { 
-	var st = $(this).scrollTop();
-	
-	$(".headertext").css({
-		"transform" : "translate 0%, -" + st*50 + "%" 
-	});
-	
-		// "transform" : "translate3d(0px, " + st /2 + "%, 0px)"
-
-	});
-
-
-(function() { 
-	var os=$(".headertext").offset();
-	alert("Top: " + x.top + " Left: " + x.left); 
-
-	console.log()
 
 })();
 
